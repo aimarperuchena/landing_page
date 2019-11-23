@@ -1,33 +1,96 @@
 .header {
     height: 50px;
-    background-color: red;
+    display: flex;
 }
 
-.titulo {
+.div_titulo {
     background-color: green;
+    flex: 0 0 33%;
 }
 
-.icono {
+.div_icono {
     background-color: yellow;
     justify-content: center;
     text-align: center;
+    flex: 0 0 33%;
+    height: 100%;
 }
 
-.login {
-    background-color: blue;
+.img_logo {
+    width: 50%;
+    padding: auto;
+}
+
+.div_login {
+    flex: 0 0 33%;
+    background-color: red;
+    flex-direction: row;
+}
+
+.img_login {
+    width: 8%;
+    height: auto;
+    margin-left: 50%;
 }
 
 .fondo {
-    /*
-    height: 100em;
-    width: 100%;
-    background: url("/img/fondo_cocinero.jpg");
+    background-image: url("/img/sociedad.jpg");
+    /* The image used */
+    background-color: #cccccc;
+    /* Used if the image is unavailable */
+    height: 930px;
+    /* You must set a specified height */
     background-position: center;
+    /* Center the image */
     background-repeat: no-repeat;
+    /* Do not repeat the image */
     background-size: cover;
-    */
-    background-color: rgb(102, 102, 102);
-    height: 60em;
+    /* Resize the background image to cover the entire container */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
 }
 
-.div_eslogan {}
+.div_eslogan {
+    background-color: #8d8d8d;
+    opacity: 80%;
+    padding: 2%;
+    border-radius: 5%;
+}
+
+.eslogan {
+    font-size: 2em;
+    color: black
+}
+
+.cuadrados {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .div_titulo {
+        background-color: green;
+        flex: 0 0 100%;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .div_icono {
+        background-color: yellow;
+        justify-content: center;
+        text-align: center;
+        flex: 0 0 100%;
+    }
+    .div_login {
+        flex: 0 0 100%;
+        background-color: red;
+        flex-direction: row;
+    }
+}

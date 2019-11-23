@@ -15,26 +15,63 @@
 
 <body>
     <div class="container col-12">
-        <div class=" row header">
-            <div class="col-4 titulo">
+        <div class="header">
+            <div class="div_titulo">
                 <p>Gastro Society</p>
             </div>
-            <div class="col-4 icono">
-                <p>Icono</p>
+            <div class="div_icono">
             </div>
-            <div class="col-4 login">
-                <p>Login</p>
+            <div class="div_login">
+                <img src="/img/login.png" class="img_login" alt="">
             </div>
         </div>
         <div class="row fondo">
-            <div class="div_eslogan row">
-                <p class="eslogan">Elijanos para su sociedad</p>
+            <div class="div_eslogan">
+            <img src="/img/logo.jpeg" class="img_logo" alt="">
+
+                <p class="eslogan">Elijanos para su sociedad
+                    <input type="text" class="form-control" placeholder="Email">
+
+                </p>
             </div>
 
-            <div class="div_datos_ingresar row">
-            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <div class="div_datos_ingresar">
             </div>
 
+        </div>
+        <div class="col-12 row cuadrados">
+            <div class="card p-5" style="width: 22rem;">
+                <img src="/img/reservas.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Reservas</h5>
+                    <p class="card-text">Organize la reserva de mesas con solo un click</p>
+                   
+                </div>
+            </div>
+            <div class="card p-5" style="width: 22rem;">
+                <img src="/img/stock.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Stock</h5>
+                    <p class="card-text">El stock de los productos en tiempo real</p>
+              
+                </div>
+            </div>
+            <div class="card p-5" style="width: 22rem;">
+                <img src="/img/contabilidad.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Contabilidad</h5>
+                    <p class="card-text">Lleve la contabilidad precisa de su sociedad</p>
+              
+                </div>
+            </div>
+            <div class="card p-5" style="width: 22rem;">
+                <img src="/img/incidencias.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Incidencias</h5>
+                    <p class="card-text">Comunicación directa de incidencias con los socios</p>
+              
+                </div>
+            </div>
         </div>
     </div>
 
